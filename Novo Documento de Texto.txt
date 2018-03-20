@@ -1,0 +1,75 @@
+
+Vitor@Vitor MINGW64 ~/Desktop/Web
+$ git inite
+git: 'inite' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+Vitor@Vitor MINGW64 ~/Desktop/Web
+$ git init
+Initialized empty Git repository in C:/Users/vitor/Desktop/Web/.git/
+
+Vitor@Vitor MINGW64 ~/Desktop/Web (master)
+$ git config --global user.email vitor.gms.silva@gmail.com
+
+Vitor@Vitor MINGW64 ~/Desktop/Web (master)
+$ git config --global user.name vtrgms95
+
+Vitor@Vitor MINGW64 ~/Desktop/Web (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vitor@Vitor MINGW64 ~/Desktop/Web (master)
+$ git add .
+
+Vitor@Vitor MINGW64 ~/Desktop/Web (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+
+Vitor@Vitor MINGW64 ~/Desktop/Web (master)
+$ git commit -m "Primeiro Commit"
+[master (root-commit) ae74e20] Primeiro Commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+Vitor@Vitor MINGW64 ~/Desktop/Web (master)
+$ git remote add origin https://github.com/vtrgms95/helloworld.git
+
+Vitor@Vitor MINGW64 ~/Desktop/Web (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Vitor@Vitor MINGW64 ~/Desktop/Web (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 396 bytes | 396.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/vtrgms95/helloworld.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Vitor@Vitor MINGW64 ~/Desktop/Web (master)
